@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.eql.safe.view.HorizontalImgSelectedView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#70000000"
+    android:gravity="left|center_vertical"
+    android:minHeight="40dip"
+    android:orientation="horizontal">
+
+    <HorizontalScrollView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false">
+            <!--注意这里 宽度一定要设置不然不能达到效果  -->
+            <LinearLayout
+                android:id="@+id/layout_gallery"
+                android:layout_width="720px"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:orientation="horizontal">
+
+                <GridView
+                    android:id="@+id/gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="40dip"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/horizontal_grid_img_spacing"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="spacingWidthUniform"
+                    android:verticalSpacing="1.0dip"></GridView>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预览"
+        android:visibility="gone" />
+
+</com.eql.safe.view.HorizontalImgSelectedView>

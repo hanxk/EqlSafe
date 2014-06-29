@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zitengfang.patient.ui.ChoosePhotoGridActivity">
+
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:columnWidth="100dip"
+        android:horizontalSpacing="5dip"
+        android:numColumns="auto_fit"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dip" />
+
+
+    <include
+        android:id="@+id/view_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        layout="@layout/view_horizontal_img_selected"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

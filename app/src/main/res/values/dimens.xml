@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="photo_item_width">120dip</dimen>
+
+    <dimen name="horizontal_grid_img_spacing">7dip</dimen>
+    <dimen name="horizontal_grid_img_selected_width">70dip</dimen>
+</resources>

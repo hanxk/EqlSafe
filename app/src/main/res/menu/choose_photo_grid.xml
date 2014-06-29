@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zitengfang.patient.ui.ChoosePhotoGridActivity" >
+
+    <item android:id="@+id/action_sure"
+        android:title="@string/action_sure"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+</menu>
